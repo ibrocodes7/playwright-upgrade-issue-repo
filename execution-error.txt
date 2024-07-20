@@ -1,0 +1,129 @@
+../blink-playwright/scripts/playwright-wrapper.sh testServer e2eLite --test-mode=FULL --browser=chrome --branch-name=SCAL-11111-41-PW --baseUrl=https://172.32.106.194:8443 --blink-version=v2.1 --password=example123 --shard-prefix=shard-demo.test.ts --spec-file=../blink-playwright/tests/demo/demo/demo.test.ts --spec-name=has title|get started link|has title1|get started link1|has title2|get started link2|has title3|get started link3|has title4|get started link4|has title5|get started link5|has title6|get started link6|has title7|get started link7|has title8|get started link8|has title9|get started link9|has title10|get started link10|has title11|get started link11|has title12|get started link12 --test-attempt=1 --max-attempts=2
+UNIQUE_ID: 53684-172.32.23.165
+NODE_OPTIONS: --max-old-space-size=4096
+Running in directory:/home/admin/thoughtspot/blink-playwright
+BASE_URL (env): https://172.32.106.194:8443
+BLINK_VERSION (env): v2.1
+TS_PASSWORD: example123
+\n\nIgnoring parameters:  ../blink-playwright/tests/demo/demo/demo.test.ts testServer e2eLite --test-mode=FULL --browser=chrome --branch-name=SCAL-11111-41-PW --shard-prefix=shard-demo.test.ts --test-attempt=1 --max-attempts=2
+\nPlaywright Version: npx playwright --version
+Version 1.45.1
+Escaped grep pattern: has title|get started link|has title1|get started link1|has title2|get started link2|has title3|get started link3|has title4|get started link4|has title5|get started link5|has title6|get started link6|has title7|get started link7|has title8|get started link8|has title9|get started link9|has title10|get started link10|has title11|get started link11|has title12|get started link12
+\nRunning test cmd: npx playwright test "../blink-playwright/tests/demo/demo/demo.test.ts" --grep "has title|get started link|has title1|get started link1|has title2|get started link2|has title3|get started link3|has title4|get started link4|has title5|get started link5|has title6|get started link6|has title7|get started link7|has title8|get started link8|has title9|get started link9|has title10|get started link10|has title11|get started link11|has title12|get started link12"
+
+Running 26 tests using 1 worker
+
+  ✓  1 demo/demo/demo.test.ts:3:5 › has title (999ms)
+  ✓  2 demo/demo/demo.test.ts:10:5 › get started link (1.7s)
+  ✓  3 demo/demo/demo.test.ts:20:5 › has title1 (799ms)
+  ✓  4 demo/demo/demo.test.ts:27:5 › get started link1 (1.6s)
+  ✘  5 demo/demo/demo.test.ts:37:5 › has title2 (20.4s)
+  ✓  6 demo/demo/demo.test.ts:46:5 › get started link2 (1.9s)
+  ✓  7 demo/demo/demo.test.ts:56:5 › has title3 (838ms)
+  ✓  8 demo/demo/demo.test.ts:63:5 › get started link3 (1.6s)
+  ✓  9 demo/demo/demo.test.ts:73:5 › has title4 (810ms)
+  ✓  10 demo/demo/demo.test.ts:80:5 › get started link4 (1.5s)
+  ✘  11 demo/demo/demo.test.ts:90:5 › has title5 (22.9s)
+  ✓  12 demo/demo/demo.test.ts:100:5 › get started link5 (1.8s)
+  ✓  13 demo/demo/demo.test.ts:110:5 › has title6 (841ms)
+  ✓  14 demo/demo/demo.test.ts:117:5 › get started link6 (1.7s)
+  ✘  15 demo/demo/demo.test.ts:127:5 › has title7 (454ms)
+  ✓  16 demo/demo/demo.test.ts:134:5 › get started link7 (1.8s)
+  ✓  17 demo/demo/demo.test.ts:144:5 › has title8 (831ms)
+  ✓  18 demo/demo/demo.test.ts:151:5 › get started link8 (1.6s)
+  ✓  19 demo/demo/demo.test.ts:161:5 › has title9 (803ms)
+  ✓  20 demo/demo/demo.test.ts:168:5 › get started link9 (1.6s)
+  ✓  21 demo/demo/demo.test.ts:178:5 › has title10 (805ms)
+  ✓  22 demo/demo/demo.test.ts:185:5 › get started link10 (1.6s)
+  ✓  23 demo/demo/demo.test.ts:195:5 › has title11 (850ms)
+  ✓  24 demo/demo/demo.test.ts:202:5 › get started link11 (1.6s)
+  ✘  25 demo/demo/demo.test.ts:212:5 › has title12 (588ms)
+  ✓  26 demo/demo/demo.test.ts:220:5 › get started link12 (1.8s)
+
+
+  1) demo/demo/demo.test.ts:37:5 › has title2 ──────────────────────────────────────────────────────
+
+    Error: ENOENT: no such file or directory, open '/home/admin/thoughtspot/blink-playwright/test-results/.playwright-artifacts-0/traces/bad089f4b07e4c6af973-33874e9a1dba5bfcd2b4-recording4.trace'
+
+    Error: ENOENT: no such file or directory, open '/home/admin/thoughtspot/blink-playwright/test-results/.playwright-artifacts-0/8f3879a0bc855b4b4083381d799b7372.zip'
+
+    [31mTest timeout of 480000ms exceeded.[39m
+
+  2) demo/demo/demo.test.ts:90:5 › has title5 ──────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m20[39m
+    Received: [31m10[39m
+
+       95 |
+       96 |   await page.waitForTimeout(20000);
+    >  97 |   expect(10).toBe(20);
+          |              ^
+       98 | });
+       99 |
+      100 | test('get started link5', async ({ page }) => {
+
+        at /home/admin/thoughtspot/blink-playwright/tests/demo/demo/demo.test.ts:97:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/demo-demo-demo-has-title5/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/demo-demo-demo-has-title5/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/demo-demo-demo-has-title5/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/demo-demo-demo-has-title5/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) demo/demo/demo.test.ts:127:5 › has title7 ─────────────────────────────────────────────────────
+
+    Error: ENOENT: no such file or directory, open '/home/admin/thoughtspot/blink-playwright/test-results/.playwright-artifacts-2/traces/resources/6a163ae94b0df23c01e41dddd064170a4c0a18e3.svg'
+
+    Error: end of central directory record signature not found
+
+  4) demo/demo/demo.test.ts:212:5 › has title12 ────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m20[39m
+    Received: [31m10[39m
+
+      215 |   // Expect a title "to contain" a substring.
+      216 |   await expect(page).toHaveTitle(/Playwright/);
+    > 217 |   expect(10).toBe(20);
+          |              ^
+      218 | });
+      219 |
+      220 | test('get started link12', async ({ page }) => {
+
+        at /home/admin/thoughtspot/blink-playwright/tests/demo/demo/demo.test.ts:217:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/demo-demo-demo-has-title12/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/demo-demo-demo-has-title12/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/demo-demo-demo-has-title12/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/demo-demo-demo-has-title12/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    demo/demo/demo.test.ts:37:5 › has title2 ───────────────────────────────────────────────────────
+    demo/demo/demo.test.ts:90:5 › has title5 ───────────────────────────────────────────────────────
+    demo/demo/demo.test.ts:127:5 › has title7 ──────────────────────────────────────────────────────
+    demo/demo/demo.test.ts:212:5 › has title12 ─────────────────────────────────────────────────────
+  22 passed (9.4m)
