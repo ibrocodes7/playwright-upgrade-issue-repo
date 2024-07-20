@@ -1,0 +1,695 @@
+{
+  "config": {
+    "configFile": "/Users/aishwarya.murugesan/thoughtspot/blink-playwright/playwright.config.ts",
+    "rootDir": "/Users/aishwarya.murugesan/thoughtspot/blink-playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "/Users/aishwarya.murugesan/thoughtspot/blink-playwright/node_modules/allure-playwright/dist/index.js",
+        {
+          "suiteTitle": true,
+          "environmentInfo": {
+            "NODE_VERSION": "v18.17.1",
+            "OS": "darwin"
+          }
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results.xml"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/aishwarya.murugesan/thoughtspot/blink-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "/Users/aishwarya.murugesan/thoughtspot/blink-playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 480000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.45.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "demo/demo/demo.test.ts",
+      "file": "demo/demo/demo.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 7176,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-20T14:39:13.425Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-6d5892b1f5fd1008e940",
+          "file": "demo/demo/demo.test.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4927,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-20T14:39:21.451Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-9a3b3ef4090c709fcc3c",
+          "file": "demo/demo/demo.test.ts",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "has title1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 3870,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-20T14:39:26.389Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-e5c5716797da87c785b9",
+          "file": "demo/demo/demo.test.ts",
+          "line": 20,
+          "column": 5
+        },
+        {
+          "title": "get started link1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4729,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-20T14:39:30.273Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-9083fb2cba4e8f976c2d",
+          "file": "demo/demo/demo.test.ts",
+          "line": 27,
+          "column": 5
+        },
+        {
+          "title": "has title2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 35707,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-20T14:39:35.008Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-33874e9a1dba5bfcd2b4",
+          "file": "demo/demo/demo.test.ts",
+          "line": 37,
+          "column": 5
+        },
+        {
+          "title": "get started link2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-20T14:40:10.727Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/aishwarya.murugesan/thoughtspot/blink-playwright/test-results/demo-demo-demo-get-started-link2/test-failed-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-4729e8b89af090d89e5c",
+          "file": "demo/demo/demo.test.ts",
+          "line": 46,
+          "column": 5
+        },
+        {
+          "title": "has title3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-c3fc5883701eff6549e0",
+          "file": "demo/demo/demo.test.ts",
+          "line": 56,
+          "column": 5
+        },
+        {
+          "title": "get started link3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-d3c313f0659622fb6ee7",
+          "file": "demo/demo/demo.test.ts",
+          "line": 63,
+          "column": 5
+        },
+        {
+          "title": "has title4",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-285d2bdb52db39741899",
+          "file": "demo/demo/demo.test.ts",
+          "line": 73,
+          "column": 5
+        },
+        {
+          "title": "get started link4",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-75964b3d31feee6c9915",
+          "file": "demo/demo/demo.test.ts",
+          "line": 80,
+          "column": 5
+        },
+        {
+          "title": "has title5",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-319c84dcf5dd7dba8823",
+          "file": "demo/demo/demo.test.ts",
+          "line": 90,
+          "column": 5
+        },
+        {
+          "title": "get started link5",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-4e845e8fc7b4be858213",
+          "file": "demo/demo/demo.test.ts",
+          "line": 100,
+          "column": 5
+        },
+        {
+          "title": "has title6",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-7a0053abb487a0489761",
+          "file": "demo/demo/demo.test.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "get started link6",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-2d35c4aba97d1ec40317",
+          "file": "demo/demo/demo.test.ts",
+          "line": 117,
+          "column": 5
+        },
+        {
+          "title": "has title7",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-944d194287eaef320812",
+          "file": "demo/demo/demo.test.ts",
+          "line": 127,
+          "column": 5
+        },
+        {
+          "title": "get started link7",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-8b99d7e2c7b65ed60dea",
+          "file": "demo/demo/demo.test.ts",
+          "line": 134,
+          "column": 5
+        },
+        {
+          "title": "has title8",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-df051cd63351ae679ac0",
+          "file": "demo/demo/demo.test.ts",
+          "line": 144,
+          "column": 5
+        },
+        {
+          "title": "get started link8",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-5f9a714f2ef1cf4041c9",
+          "file": "demo/demo/demo.test.ts",
+          "line": 151,
+          "column": 5
+        },
+        {
+          "title": "has title9",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-bf8cd3e8d6631e9f1ed3",
+          "file": "demo/demo/demo.test.ts",
+          "line": 161,
+          "column": 5
+        },
+        {
+          "title": "get started link9",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-9102e1ead54e39855ce8",
+          "file": "demo/demo/demo.test.ts",
+          "line": 168,
+          "column": 5
+        },
+        {
+          "title": "has title10",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-4881b91fcf53c6fb63e0",
+          "file": "demo/demo/demo.test.ts",
+          "line": 178,
+          "column": 5
+        },
+        {
+          "title": "get started link10",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-c3e7f69f358074ad1eb1",
+          "file": "demo/demo/demo.test.ts",
+          "line": 185,
+          "column": 5
+        },
+        {
+          "title": "has title11",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-8098c7f67387f16b9d72",
+          "file": "demo/demo/demo.test.ts",
+          "line": 195,
+          "column": 5
+        },
+        {
+          "title": "get started link11",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-c864d6458681b849e754",
+          "file": "demo/demo/demo.test.ts",
+          "line": 202,
+          "column": 5
+        },
+        {
+          "title": "has title12",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-e38afa87fd8a4a542baf",
+          "file": "demo/demo/demo.test.ts",
+          "line": 212,
+          "column": 5
+        },
+        {
+          "title": "get started link12",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 480000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "bad089f4b07e4c6af973-d3e74440530e5656400a",
+          "file": "demo/demo/demo.test.ts",
+          "line": 220,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-07-20T14:39:12.553Z",
+    "duration": 160639.959,
+    "expected": 5,
+    "skipped": 21,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

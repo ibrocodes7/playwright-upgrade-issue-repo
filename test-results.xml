@@ -1,0 +1,98 @@
+<testsuites id="" name="" tests="26" failures="0" skipped="21" errors="0" time="160.639959">
+<testsuite name="demo/demo/demo.test.ts" timestamp="2024-07-20T14:39:12.628Z" hostname="" tests="26" failures="0" skipped="21" time="56.409" errors="0">
+<testcase name="has title" classname="demo/demo/demo.test.ts" time="7.176">
+</testcase>
+<testcase name="get started link" classname="demo/demo/demo.test.ts" time="4.927">
+</testcase>
+<testcase name="has title1" classname="demo/demo/demo.test.ts" time="3.87">
+</testcase>
+<testcase name="get started link1" classname="demo/demo/demo.test.ts" time="4.729">
+</testcase>
+<testcase name="has title2" classname="demo/demo/demo.test.ts" time="35.707">
+</testcase>
+<testcase name="get started link2" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="has title3" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link3" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="has title4" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link4" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="has title5" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link5" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="has title6" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link6" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="has title7" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link7" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="has title8" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link8" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="has title9" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link9" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="has title10" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link10" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="has title11" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link11" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="has title12" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link12" classname="demo/demo/demo.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>
