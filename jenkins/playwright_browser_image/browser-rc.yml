@@ -1,0 +1,106 @@
+# apiVersion extension/v1beta1 also supports replicasets, which
+# will eventually replace replication controllers, and are used
+# through a Deployment.  But we don't use it here since the
+# Kubernetes UI does not show Deployments and replicasets yet.
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  # CLUSTER will be replaced with clusterName
+  name: CLUSTER
+  labels:
+    app: CLUSTER
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: CLUSTER
+    spec:
+      containers:
+        - name: browser-sidecar
+          # This image has the browsers and other tools to run tests remotely
+          image: 'registry.corp.example.com/scaligent/cluster_tpch:browser-chrome80'
+          imagePullPolicy: Always
+          securityContext:
+            privileged: true
+          resources:
+            limits:
+              memory: 6Gi
+              cpu: '2'
+            requests:
+              memory: 4Gi
+              cpu: '1'
+          volumeMounts:
+            - mountPath: /dev/shm
+              name: dshm
+            - mountPath: /usr/local/scaligent/toolchain
+              name: toolchain
+            - mountPath: /proc/cpuinfo
+              name: cpuinfo
+            - mountPath: /proc/diskstats
+              name: diskstats
+            - mountPath: /proc/meminfo
+              name: meminfo
+            - mountPath: /proc/stat
+              name: stat
+            - mountPath: /proc/swaps
+              name: swaps
+            - mountPath: /proc/uptime
+              name: uptime
+            - mountPath: /home/hudson/.hudson
+              name: workspace-volume
+              readOnly: false
+          workingDir: /home/hudson/.hudson
+          readinessProbe:
+            exec:
+              # Always ready
+              command: ['/bin/sh', '-c', 'echo 0']
+            initialDelaySeconds: 0
+            periodSeconds: 10
+            timeoutSeconds: 180
+      hostAliases:
+        - hostnames:
+            - 'mothership'
+          ip: '10.79.134.70'
+        - hostnames:
+            - 'nebula'
+          ip: '192.168.2.84'
+        - hostnames:
+            - 'registry.corp.example.com'
+          ip: '10.79.134.111'
+        - hostnames:
+            - 'giantstore.example.int'
+          ip: '192.168.7.183'
+        - hostnames:
+            - 'jenkins'
+          ip: '192.168.2.84'
+      nodeSelector:
+        dedicated: common
+      volumes:
+        - name: dshm
+          emptyDir:
+            medium: Memory
+        - name: toolchain
+          hostPath:
+            path: /usr/local/scaligent/toolchain-branches/toolchain_release
+        - name: cpuinfo
+          hostPath:
+            path: /var/lib/lxcfs/proc/cpuinfo
+        - name: diskstats
+          hostPath:
+            path: /var/lib/lxcfs/proc/diskstats
+        - name: meminfo
+          hostPath:
+            path: /var/lib/lxcfs/proc/meminfo
+        - name: stat
+          hostPath:
+            path: /var/lib/lxcfs/proc/stat
+        - name: swaps
+          hostPath:
+            path: /var/lib/lxcfs/proc/swaps
+        - name: uptime
+          hostPath:
+            path: /var/lib/lxcfs/proc/uptime
+        - name: workspace-volume
+          emptyDir:
+            medium: ''
